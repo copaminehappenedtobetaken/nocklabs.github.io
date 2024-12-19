@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Nock Laboratories</title>
+</head>
+<body>
+    <div id="terminal-container">
+
+        <div id="login-container">
+            <img class="Logo" src="Logo.png">
+
+            <form id="login-form">
+                <label for="username">Laboratory ID:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <p id="error-message">Invalid Username or Password</p>
+            </form>
+        </div>
+
+        <div id="loading-message" style="display: none;">
+            <h2>Loading content...</h2>
+        </div>
+        
+        <div id="main-menu" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">Welcome, <b>Dr. Ghiles</b>.</div>
+            <h3>Enter a file code to access its information.</h3>
+
+            <div id="input-boxes">
+                <input type="text" id="input1" maxlength="1" oninput="handleInput(this, 'input2', 'input1')" onkeydown="handleBackspace(event, 'input1')">
+                <input type="text" id="input2" maxlength="1" oninput="handleInput(this, 'input3', 'input1')" onkeydown="handleBackspace(event, 'input1')">
+                <input type="text" id="input3" maxlength="1" oninput="handleInput(this, 'input4', 'input2')" onkeydown="handleBackspace(event, 'input2')">
+                <input type="text" id="input4" maxlength="1" oninput="handleInput(this, 'input5', 'input3')" onkeydown="handleBackspace(event, 'input3')">
+                <input type="text" id="input5" maxlength="1" oninput="handleInput(this, null, 'input4')" onkeydown="handleBackspace(event, 'input4')">
+            </div>
+
+            <button id="submit-button">Submit</button>
+        </div>
+
+        <div id="manyw-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>CHAPTER 8: SYNAPSE</b>.</div>
+            <div class="manyw-content"><h3>⠀Confidential file. Proceed with caution.
+
+
+                <br><br>
+                ⠀With the research and development of hyper-intelligent quantum computers on B6, Project Lead M. White Ph.D. proposed an idea—one so ludicrous, it was shot down immediately. But she continued her studies, enlisting me (only nineteen at the time) as her associate.
+                
+                <br><br>
+                
+                ⠀The principle was simple—take advantage of the MWI (Many-Worlds Interpretation), a theory proven back in 2032, the year I was born. It wasn’t too complicated, either; our computers were already able to download the human psyche. White suggested we use theory and technology in tandem.
+                
+                <br><br>
+                
+                ⠀Thus, the Many-Worlds Project was born. Our tests started small—observe the divergence of parallels from our own, using our simulation program, Simulator X2. Through many experiments, we determined it would be feasible for our quantum computers to interact with entangled parallels, worlds similar to our own and superpositioned with more particles than usual.
+                
+                <br><br>
+                
+                ⠀Using the theoretical model from the simulation, we created the device, apprehensively calling it the Transversal. Named after its mathematical counterpart, a line which crosses through parallel lines, we had high hopes it could give us information about the alternate realities these parallels contained.
+                
+                <br><br>
+                
+                ⠀Entangled parallels, though, were hard to come by. We needed a basis to work with—some sort of framework to match worlds to one another. And since the most traceable signature through parallels is the human consciousness, we decided we would align our computers for a particular brain.
+                
+                <br><br>
+                
+                ⠀But of course, to do this, we needed a volunteer. The technology was new and somewhat risky, but upon being given the opportunity to make history, [REDACTED] decided to help. We hooked them up to the computer and started scanning.
+                
+                <br><br>
+                
+                ⠀Quickly, we found a match. An identical signature—a parallel version of [REDACTED]. For some reason, though, we couldn’t bring their consciousness through the parallel. So Dr. White upped the power, more and more, until tragically, the computer sent a shock through the cords and wound up killing our volunteer.
+                
+                <br><br>
+                
+                ⠀Somehow, though, this provided us with the full and complete consciousness of their alternate self. We still don’t know why this is the case, but it appears two parallel humans cannot both be alive at the same time in the same world. Their death provided us with the jumping-off point we needed. Rest in peace, [REDACTED].
+                
+                <br><br>
+                
+                ⠀Knowing a consciousness is a very fragile thing, we quickly contained them in X2. In hindsight, it may have been better to procedurally erase their memories beforehand—MWP01 was very hard to analyze while they were panicking.
+                
+                <br><br>
+                
+                ⠀We repurposed [REDACTED]’s body as a host for MWP01’s consciousness, so that instead of solely roaming X2, they could have some sense of physicality. This made it much easier to reset their memories for the purposes of our test: to find out whether the human psyche differs between realities. It was White’s idea, so she offered to work on MWP01 herself while I continued the search.
+                
+                <br><br>
+                
+                ⠀Moving along to other test subjects, I instead scanned preserved brains so that no one else would have to die for our cause. We started with the brain of a deceased scientist who had passed five years prior—it worked smoothly, and after resetting the parallel consciousness’s memory, we had our biomechanics lab on B4 create a body for it to control. Thus, [REDACTED] became MWP02, and responsibility for her development fell on my shoulders.
+                
+                <br><br>
+                
+                ⠀MWP03 was my idea. In our cryogenics unit on B1, we held the body—and brain—of someone I found very intriguing. White approved my use of [REDACTED]’s body for the project, and we found an entangled parallel with a matching consciousness. I was very careful when erasing this subject’s memory—even the smallest recollection could lead to disaster given their dangerous nature.
+                
+                <br><br>
+                
+                ⠀White retrieved the body and head of MWP04, completely detached from one another, from an unknown source. It disturbs me greatly, and I still don’t know where she got it from—she won’t tell me. She pleaded with the biomechanics lab to somehow revive the body, which they managed to do with some success. The entangled parallel we found her consciousness in was also the closest to our own by far, nearly the exact same but offset by about half a century.
+                
+                <br><br>
+                
+                ⠀Thus, we had all our subjects. The problem we found, though, was that X2 could only tolerate two or three interacting consciousnesses, not the four we had set up. So we split them into two groups, non-interacting, and began what would be almost a six-year study on their minds and their nature. Would their erased memories have an effect on their personalities? Or did they have inherent traits according to their brains’ wirings?
+                
+                <br><br>
+                
+                ⠀This project is still underway. A final report is not available yet—please check back on January 15th, 2025.</h3>
+            <button id="back-button1">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+        
+        <div id="nlabs-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>CHAPTER 9: HYPERBOLA</b>.</div>
+            <div class="nlabs-content"><h3>⠀test </h3>
+                <button id="back-button2">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="prone-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>CHAPTER 12: ORTHOGONAL</b>.</div>
+            <div class="prone-content"><h3>⠀test </h3>
+                <button id="back-button3">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+        
+        <div id="nwdwn-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>CHAPTER 13: PERIPHERALS</b>.</div>
+            <div class="nwdwn-content"><h3>⠀test </h3>
+                <button id="back-button4">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="lilia-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀File found in <b>PEOPLE</b>.</div>
+            <div class="lilia-content"><h3>⠀test </h3>
+                <button id="back-button5">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="aubrn-page1" style="display: none;">
+            <img class="aLogo" src="Logo.png">
+            <div class="Welcome"><b>##################</b>.</div>
+            <h3>############################################</h3>
+
+            <div id="aubrn-boxes">
+                <input type="text" id="input1" maxlength="1" oninput="handleInput(this, 'input2', 'input1')" onkeydown="handleBackspace(event, 'input1')">
+                <input type="text" id="input2" maxlength="1" oninput="handleInput(this, 'input3', 'input1')" onkeydown="handleBackspace(event, 'input1')">
+                <input type="text" id="input3" maxlength="1" oninput="handleInput(this, 'input4', 'input2')" onkeydown="handleBackspace(event, 'input2')">
+                <input type="text" id="input4" maxlength="1" oninput="handleInput(this, 'input5', 'input3')" onkeydown="handleBackspace(event, 'input3')">
+                <input type="text" id="input5" maxlength="1" oninput="handleInput(this, null, 'input4')" onkeydown="handleBackspace(event, 'input4')">
+            </div>
+
+            <button id="aubrn-button">######</button>
+        </div>
+        
+
+        <div id="aubrn-page" style="display: none;">
+            <img class="aLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>###############################</b>.</div>
+            <div class="aubrn-content"><h3>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br>⠀############################################################################################################################################<br> </h3>
+                <button>#############</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="white-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀File found in <b>PEOPLE</b>.</div>
+            <div class="white-content"><h3>⠀test </h3>
+                <button id="back-button6">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="evrly-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀File found in <b>PEOPLE</b>.</div>
+            <div class="evrly-content"><h3>⠀test </h3>
+                <button id="back-button7">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="lstar-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀File found in <b>PEOPLE</b>.</div>
+            <div class="lstar-content"><h3>⠀test </h3>
+                <button id="back-button8">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="simx2-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>CHAPTER 15: ASYMPTOTE</b>.</div>
+            <div class="simx2-content"><h3>⠀test </h3>
+                <button id="back-button9">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="marin-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>CHAPTER #: #### #####</b>.</div>
+            <div class="marin-content"><h3>⠀test </h3>
+                <button id="back-button10">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+
+        <div id="nikog-page" style="display: none;">
+            <img class="cLogo" src="Logo.png">
+            <div class="Welcome">File found in <b>CHAPTER #: ##/## ###</b>.</div>
+            <div class="nikog-content"><h3>⠀test </h3>
+                <button id="back-button11">Back to Main Menu</button>
+            <p>⠀</p>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
