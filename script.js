@@ -137,6 +137,14 @@ document.getElementById('submit-button').addEventListener('click', function() {
             nwdwnPage.classList.add('fade-in');
             mainMenu.classList.remove('fade-out');
         }, 1000);
+     } else if (code === 'virus') {
+        mainMenu.classList.add('fade-out');
+        setTimeout(() => {
+            mainMenu.style.display = 'none';
+            nwdwnPage.style.display = 'block';
+            nwdwnPage.classList.add('fade-in');
+            mainMenu.classList.remove('fade-out');
+        }, 1000);
     } else if (code === 'lilia') {
         mainMenu.classList.add('fade-out');
         setTimeout(() => {
